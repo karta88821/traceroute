@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
     
     if(argc != 3) { printf("Usage: ./prog hop-distance <IP_address>\n"); exit(1); }
 
-	int hops = (int) strtol(arg[1], NULL, 10);
+	int hops = (int) strtol(argv[1], NULL, 10);
 
 	if (hops > TTL_LIMIT) { printf("hop-distance can't be greater than 30\n"); exit(1);  }
     
